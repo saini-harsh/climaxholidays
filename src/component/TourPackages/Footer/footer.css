@@ -1,0 +1,93 @@
+footer {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  position: relative;
+  border-top: 1px solid #f5f5f5;
+}
+@media (max-width: 992.98px) {
+  footer {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+}
+footer .logo {
+  margin-bottom: 16px;
+}
+footer .cbg-grey {
+  background-color: #6d6e71;
+}
+footer p {
+  font-size: 15px;
+  color: #6d6e71;
+  margin-bottom: 2px;
+}
+footer h5 {
+  font-size: 25px;
+  color: #000000;
+  text-transform: uppercase;
+}
+@media (max-width: 992.98px) {
+  footer h5 {
+    margin-top: 30px;
+  }
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+footer ul li {
+  line-height: 1.8;
+}
+footer ul li a {
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: #6d6e71;
+}
+footer ul li a:hover {
+  color: #c20f2f;
+}
+footer .d-flex {
+  margin-top: 16px;
+}
+footer .d-flex a i {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #6d6e71;
+  transition: all 1s linear;
+}
+footer .d-flex a i:hover {
+  color: #c20f2f;
+}
+footer .d-flex .location img {
+  padding-right: 10px;
+}
+footer .d-flex .detail h6 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: black;
+}
+footer .d-flex .detail a {
+  margin-bottom: 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: #6d6e71;
+}
+footer .d-flex .detail a:hover {
+  color: #c20f2f;
+}
+footer .copy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(109, 110, 113, 0.8);
+}
+footer .copy p {
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 10px 0px;
+  font-size: 18px;
+  color: #6d6e71;
+}

@@ -1,0 +1,22 @@
+.bannerInner {
+  padding: 50px 0;
+  /* background: #d32f2f; */
+  /* background: linear-gradient(20deg, rgb(247 48 48) 20%, rgb(29 72 159) 100%);*/
+  background: linear-gradient(90deg,rgba(88, 189, 234, 0.68) 0%, rgba(42, 142, 204, 0.87) 50%, rgba(5, 5, 5, 0.81) 100%);
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.section_padding {
+  padding: 40px 0;
+}
+/* @media (min-width: 1366px){
+.container {
+    max-width: 1200px;
+}} */
+.section_padding p {
+    font-size: 16px;
+}
+.img-fluid {
+    width: 100%;
+}

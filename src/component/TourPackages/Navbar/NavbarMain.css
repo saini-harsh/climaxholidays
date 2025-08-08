@@ -1,0 +1,212 @@
+/* Wrapper */
+.Navbar_Main {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+/* Main Bar Flex Layout */
+.Navbar_Main-MenuBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 50px; */
+  border-bottom: 1px solid #eaeaea;
+  /* flex-wrap: wrap; */
+}
+
+.Navbar_Main-LeftGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+/* Logo Styling */
+.logo-section .logo-main {
+  height: auto;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+/* Center Nav Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+/* ✅ Stable nav-item-link */
+.nav-item-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 21px 14px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+  border-right: 1px solid #dcdcdc;
+  font-size: 13px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item-link:hover {
+  background-color: rgba(42, 142, 204, 0.1);
+  color: #014e89;
+  border-bottom: 3px solid black;
+}
+
+/* Icons */
+.nav-icon {
+  font-size: 18px;
+  color: #014e89;
+}
+
+/* Contact Button */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #014e89;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.contact-btn:hover {
+  background-color: #014e89;
+}
+
+/* Dropdown Menu */
+.nav-item-link.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0;
+  display: none;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-item-link.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  color: #014e89;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(42, 142, 204, 0.1);
+  color: #014e89;
+}
+
+/* 🔽 Mobile Toggle Button */
+.navbar-toggle {
+  display: none;
+  font-size: 26px;
+  background: #014e89;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1100;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .Navbar_Main-MenuBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 16px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    gap: 12px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  #menuToggle:checked ~ .Navbar_Main .nav-links {
+    display: flex;
+  }
+
+  .nav-item-link {
+    border-right: none;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .Navbar_Main-LeftGroup {
+    /* flex-direction: column; */
+    gap: 12px;
+  }
+
+  .contact-btn {
+    align-self: flex-start;
+    width: 55%;
+    margin-top: 25px;
+  }
+  
+}
+/* @media (max-width: 1024px) {
+   .Navbar_Main-LeftGroup{
+    display: flex;
+  }
+} */
+
+
+
+
