@@ -67,7 +67,7 @@ const NavbarMain = () => {
                 </div>
 
                 <Link to="/honeymoon" className="nav-item-link">
-                  <CiStreamOn  className="nav-icon" /> Track
+                  <CiStreamOn  className="nav-icon" /> Treks
                 </Link>
               </div>
             </div>

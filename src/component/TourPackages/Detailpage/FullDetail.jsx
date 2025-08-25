@@ -188,7 +188,7 @@ const FullDetail = ({ data,test,loading }) => {
                 <a href="#inclusion">Inclusion</a>
               </li>
               <li className="">
-                <a href="#exclusion">Exclusion</a>
+                <a href="#exlcusion">Exclusion</a>
               </li>
               <li className="">
                 <a href="#Hotels">Hotels</a>
